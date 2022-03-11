@@ -134,7 +134,7 @@ app.get('/api/yt-download', async (req, res) => {
 
                 const conv = ffmpeg()
                     .addInput(audio)
-                    .format(format);
+                    .format(format == 'aac' ? 'adts' : format);
 
                 conv.on('stderr', data => {
                     console.log(data);
