@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+        <meta name="viewport" content="width=device-width" />
+
+        <meta property="og:site_name" content="{file_name}" />
+        <meta property="og:url" content="{vid_url}" />
+        <meta property="og:video" content="{vid_url}" />
+        <meta property="og:video:url" content="{vid_url}" />
+        <meta property="og:video:secure_url" content="{vid_url}" />
+        <meta property="og:type" content="video.other" />
+        <meta property="og:video:type" content="video/{ext_name}" />
+        <meta property="og:video:width" content="1280" />
+        <meta property="og:video:height" content="720" />
+        
+    </head>
+    <body style="background-color: #000000; display: block; margin: 8px;">
+        <video controls autoplay name="media" style="position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: auto; max-height: 100%; max-width: 100%; object-fit: contain;">
+            <source src="{vid_url}" type="video/{ext_name}">
+        </video>
+    </body>
+</html>

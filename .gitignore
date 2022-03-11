@@ -1,0 +1,7 @@
+files/*
+!files/__template.html
+node_modules
+*.mp3
+*.flac
+bruh.json
+test.js
